@@ -6,8 +6,8 @@ def main(page: ft.Page):
     txt_last_name = ft.TextField()
 
     # Propriedade disabled  atribuído de forma individual:
-    txt_first_name.disabled = True
-    txt_last_name.disabled = True
+    """txt_first_name.disabled = True
+    txt_last_name.disabled = True"""
 
     # Propriedade disabled atribuída em uma lista de controles:
     col_controles = ft.Column(
@@ -16,6 +16,7 @@ def main(page: ft.Page):
             txt_last_name
         ]
     )
+    col_controles.disabled = True
 
     page.add(
         col_controles
